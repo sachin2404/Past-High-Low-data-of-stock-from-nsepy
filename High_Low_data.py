@@ -7,8 +7,8 @@ niftystocks = ["ADANIPORTS", "ASIANPAINT", "AXISBANK", "BAJAJ-AUTO", "BAJAJFINSV
                "RELIANCE", "SBIN", "SUNPHARMA", "TATAMOTORS", "TATASTEEL", "TCS", "TECHM", "TITAN", "ULTRACEMCO", "UPL",
                "VEDL", "WIPRO", "YESBANK", "ZEEL"]
 def tendayshigh(stock_name):
-   start1 = datetime.strptime("2019-04-02", "%Y-%m-%d").date()
-   end1 = datetime.strptime("2019-04-15", "%Y-%m-%d").date()
+   start1 = datetime.strptime("2021-03-12", "%Y-%m-%d").date()
+   end1 = datetime.strptime("2021-03-25", "%Y-%m-%d").date()
 
    sbin = get_history(symbol=stock_name,
                   start=start1,
@@ -17,8 +17,8 @@ def tendayshigh(stock_name):
    return max(sbin.High)
 
 def fivedayshigh(stock_name):
-   start1 = datetime.strptime("2019-04-09", "%Y-%m-%d").date()
-   end1 = datetime.strptime("2019-04-15", "%Y-%m-%d").date()
+   start1 = datetime.strptime("2021-03-19", "%Y-%m-%d").date()
+   end1 = datetime.strptime("2021-03-25", "%Y-%m-%d").date()
 
    sbin = get_history(symbol=stock_name,
                   start=start1,
@@ -27,8 +27,8 @@ def fivedayshigh(stock_name):
    return max(sbin.High)
 
 def tendayslow(stock_name):
-   start1 = datetime.strptime("2019-04-02", "%Y-%m-%d").date()
-   end1 = datetime.strptime("2019-04-15", "%Y-%m-%d").date()
+   start1 = datetime.strptime("2021-03-12", "%Y-%m-%d").date()
+   end1 = datetime.strptime("2021-03-25", "%Y-%m-%d").date()
 
    sbin = get_history(symbol=stock_name,
                   start=start1,
@@ -37,8 +37,8 @@ def tendayslow(stock_name):
    return min(sbin.Low)
 
 def fivedayslow(stock_name):
-   start1 = datetime.strptime("2019-04-09", "%Y-%m-%d").date()
-   end1 = datetime.strptime("2019-04-15", "%Y-%m-%d").date()
+   start1 = datetime.strptime("2021-03-19", "%Y-%m-%d").date()
+   end1 = datetime.strptime("2021-03-25", "%Y-%m-%d").date()
 
    sbin = get_history(symbol=stock_name,
                   start=start1,
